@@ -318,6 +318,12 @@ you should place your code here."
   (setq-default omnisharp-server-executable-path "/Users/novia/git/omnisharp-roslyn/artifacts/publish/OmniSharp/default/net46/OmniSharp.exee")
   (setq eclim-eclipse-dirs "/Applications/Eclipse.app/Contents/Eclipsee"
         eclim-executable "/Applications/Eclipse.app/Contents/Eclipse/eclimm")
+  (setq neo-theme 'ascii
+        neo-window-width 32
+        neo-show-updir-line t
+        neo-mode-line-type 'neotree
+        neo-persist-show nil
+        neo-vc-integration nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
