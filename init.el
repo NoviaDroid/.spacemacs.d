@@ -324,6 +324,8 @@ you should place your code here."
         neo-mode-line-type 'neotree
         neo-persist-show nil
         neo-vc-integration nil)
+  (setq magit-diff-auto-show t)
+  (setq-default git-magit-status-fullscreen t)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
