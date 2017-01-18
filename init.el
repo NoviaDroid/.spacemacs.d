@@ -315,7 +315,7 @@ you should place your code here."
   (global-company-mode)
   (spacemacs//set-monospaced-font   "FixedsysExcelsioriiib NF" "Zpix" 16 16)
   (setq ns-use-srgb-colorspace nil)
-  (setq powerline-default-separator 'utf8)
+  (setq powerline-default-separator 'arrow)
   ;; (setq spaceline-separator-dir-left nil)
   ;; (setq spaceline-separator-dir-right nil)
   (setq-default omnisharp-server-executable-path "/Users/novia/git/omnisharp-roslyn/artifacts/publish/OmniSharp/default/net46/OmniSharp.exee")
