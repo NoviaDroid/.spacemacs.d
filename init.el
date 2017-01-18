@@ -56,6 +56,7 @@ values."
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
+     vim-powerline
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -134,18 +135,16 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(spacemacs-dark
-                         spacemacs-light
-                         solarized-dark
-                         solarized-light)
+                         spacemacs-light)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Fixedsys Excelsior 3.01"
+   dotspacemacs-default-font '("Fixedsys Excelsior"
                                :size 16
                                :weight normal
                                :width normal
-                               :powerline-scale 1.5)
+                               :powerline-scale 1)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The key used for Emacs commands (M-x) (after pressing on the leader key).
@@ -250,7 +249,7 @@ values."
    ;; If non nil show the color guide hint for transient state keys. (default t)
    dotspacemacs-show-transient-state-color-guide t
    ;; If non nil unicode symbols are displayed in the mode line. (default t)
-   dotspacemacs-mode-line-unicode-symbols t
+   dotspacemacs-mode-line-unicode-symbols nil
    ;; If non nil smooth scrolling (native-scrolling) is enabled. Smooth
    ;; scrolling overrides the default behavior of Emacs which recenters point
    ;; when it reaches the top or bottom of the screen. (default t)
@@ -314,9 +313,11 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   ;; (global-auto-complete-mode)
   (global-company-mode)
-  (spacemacs//set-monospaced-font   "Fixedsys Excelsior 3.01" "Zpix" 16 16)
+  (spacemacs//set-monospaced-font   "Fixedsys Excelsior" "Zpix" 16 16)
   (setq ns-use-srgb-colorspace nil)
-  (setq powerline-default-separator 'slant)
+  (setq powerline-default-separator 'utf8)
+  ;; (setq spaceline-separator-dir-left nil)
+  ;; (setq spaceline-separator-dir-right nil)
   (setq-default omnisharp-server-executable-path "/Users/novia/git/omnisharp-roslyn/artifacts/publish/OmniSharp/default/net46/OmniSharp.exee")
   (setq eclim-eclipse-dirs "/Applications/Eclipse.app/Contents/Eclipsee"
         eclim-executable "/Applications/Eclipse.app/Contents/Eclipse/eclimm")
