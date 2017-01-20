@@ -140,7 +140,7 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("FixedsysExcelsioriiib NF"
+   dotspacemacs-default-font '("NOVIA"
                                :size 16
                                :weight normal
                                :width normal
@@ -313,7 +313,7 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   ;; (global-auto-complete-mode)
   (global-company-mode)
-  (spacemacs//set-monospaced-font   "FixedsysExcelsioriiib NF" "Zpix" 16 16)
+  ;; (spacemacs//set-monospaced-font   "NOVIA" "Zpix" 16 16)
   (setq ns-use-srgb-colorspace nil)
   (setq powerline-default-separator 'arrow)
   ;; (setq spaceline-separator-dir-left nil)
